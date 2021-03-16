@@ -4,18 +4,9 @@ import java.util.Scanner;
  *
  */
 public class Main {
-//    OOP (Object Oriented Programming) / PBO (Pemograman Berbasis Object)
-//    OOP => Object, Modifier, Class, Interface
-//    Modifier yang umum dipakai cuma 2 : private dan public
-//    Private = diakses di kelas itu saja, tidak bisa dikelas lain
-//    POJO = Plain Old Java Object (SETTER, GETTER (get = mengambil), CONSTRUCTOR = naruh bahan-bahan)
-//    Return = Nilai Kembali
-//    kata "new"
-//    void = hampa
-
+    
     public static void main(String args[]) {
-
-
+        
         Scanner sc = new Scanner(System.in);
         System.out.println("Masukkan Nama Depan :");
         String firstName = sc.nextLine();
