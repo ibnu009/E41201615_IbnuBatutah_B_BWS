@@ -1,7 +1,6 @@
 import java.util.Scanner;
 
 public class TugasA {
-
     public void outputTugasAMinggu4() {
         System.out.println("This is Task A : ");
         System.out.println();
@@ -16,7 +15,9 @@ public class TugasA {
         batasBilangan = sc.nextInt();
 
         for (int i = awalBilangan; i <= batasBilangan; i++) {
-            System.out.print(i + " ");
+            if ( i % 2 == 0){
+                System.out.print(i + " ");
+            }
         }
     }
 

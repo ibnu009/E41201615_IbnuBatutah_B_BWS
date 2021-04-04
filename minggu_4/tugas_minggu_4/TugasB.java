@@ -7,15 +7,20 @@ public class TugasB {
         System.out.println("This is task B :");
         System.out.println();
 
-        int angkaFor = 1, angkaWhile = 1;
+        int angkaAwal = 1, angkaWhile = 1;
 
         System.out.println(StringUtils.center("\"For\" Loop:", 30));
         System.out.println("Bilangan kelipatan 2 (1 - 100) ");
         System.out.println(StringUtils.rightPad( "=", 30, "="));
-        for (int i = 0; i < 50; i++) {
-            System.out.print(angkaFor*2 + " ");
-            angkaFor++;
-        }
+        int newResult = 0;
+            for (int i = angkaAwal; newResult < 100; i++) {
+                newResult = angkaAwal  * 2;
+                if (newResult < 100){
+                    System.out.print(newResult + " ");
+                }
+                angkaAwal = newResult;
+            }
+
 
         System.out.println();
         System.out.println();
@@ -23,10 +28,14 @@ public class TugasB {
         System.out.println(StringUtils.center("\"DO WHILE\" Loop :", 30));
         System.out.println("Bilangan kelipatan 2 (1 - 100) ");
         System.out.println(StringUtils.rightPad( "=", 30, "="));
+
         do {
-            System.out.print(angkaWhile*2 + " ");
-            angkaWhile++;
-        } while (angkaWhile <= 50);
+            int newResults = angkaWhile * 2;
+            if (newResults < 100){
+                System.out.print(newResults + " ");
+            }
+            angkaWhile = newResults;
+        } while (angkaWhile < 100);
     }
 
 }
